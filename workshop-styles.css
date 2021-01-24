@@ -1,6 +1,6 @@
 /* App Styles*/
 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +15,9 @@
 .Container {
     margin-top: 8.5%;
     padding: 0.5%;
-    /* border: 1px solid purple; */
+    /* border: 1px solid purple; 
     margin-bottom: 0.1%;
-}
+} */
 
 /* App Styles*/
 
@@ -25,7 +25,7 @@
 
 /* Navigation Styles*/
 
-.Navigation {
+/* .Navigation {
     width: 100%;
     height: 14vh;
     background-color: #234465;
@@ -34,7 +34,7 @@
     top: 0;
     border-bottom: 2px solid #ffa000;
     border-top: 2px solid #ffa000;
-}
+} */
 
 /* Navigation Styles*/
 
@@ -42,7 +42,7 @@
 
 /* Link Styles */
 
-nav .listItem a {
+/* nav .listItem a {
     color: white;
     text-decoration: none;
 }
@@ -116,7 +116,7 @@ aside .listItem:hover {
     border-top: 2px solid #234465;
     border-bottom: 2px solid #234465;
     color: #ffa000;
-}
+} */
 
 /* Link Styles */
 
