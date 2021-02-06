@@ -12,7 +12,8 @@ class Origamis extends Component {
     }
 
     getOrigamis = async () => {
-        const promise = await fetch('http://localhost:9999/api/origami')
+        const { length } = this.props
+        const promise = await fetch(`http://localhost:9999/api/origami?length=${length}`)
         const origamis = await promise.json()
 
         this.setState({
@@ -23,9 +24,9 @@ class Origamis extends Component {
     renderOrigamis() {
         const { origamis } = this.state
 
-        return origamis.map(origami => {
+        return origamis.map((origami, index) => {
             return (
-                <Origami key={origami._id} {...origami} />
+                <Origami key={origami._id} index={index + 1} {...origami} />
             )
         })
     }
@@ -35,14 +36,9 @@ class Origamis extends Component {
     }
 
     render() {
-        // console.log(this.state.origamis)
-
         return (
-            <div className={styles.main}>
-                <h1 className={styles.title}>Origamis</h1>
-                <div className={styles["posts"]}>
-                    {this.renderOrigamis()}
-                </div>
+            <div className={styles["posts"]}>
+                {this.renderOrigamis()}
             </div>
         )
     }

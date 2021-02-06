@@ -1,17 +1,26 @@
 import React from 'react'
 import styles from './index.module.css'
 import Link from '../link'
-import image from '../../images/blue-origami-bird-flipped.png'
+import logo from '../../images/blue-origami-bird-flipped.png'
+import getNavigation from '../../utils/navigation'
 
 const Footer = () => {
+    const links = getNavigation()
     return (
         <footer className={styles.footer}>
-            <Link href="#" title="Going to 1" type="footer" />
-            <Link href="#" title="Going to 2" type="footer" />
-            <Link href="#" title="Going to 3" type="footer" />
-            <Link href="#" title="Going to 4" type="footer" />
-            <Link href="#" title="Going to 5" type="footer" />
-            <img src={image} />
+            {
+                links.map(nav => {
+                    return (
+                        <Link
+                            key={nav.title}
+                            href={nav.link}
+                            title={nav.title}
+                            type="footer"
+                        />
+                    )
+                })
+            }
+            <img className={styles.logo} src={logo} alt="footer-logo" />
             <p>
                 Softuni 2021
             </p>
