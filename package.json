@@ -16,10 +16,11 @@
         "express": "^4.17.1",
         "ignore-styles": "^5.0.1",
         "node-fetch": "^2.6.0",
+        "parse-json": "^5.2.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "3.4.1",
+        "react-scripts": "^4.0.2",
         "react-test-renderer": "^16.13.1",
         "styled-components": "^5.1.1",
         "web-vitals": "^1.1.0"

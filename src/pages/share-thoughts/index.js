@@ -4,7 +4,6 @@ import PageWrapper from '../../components/page-layout'
 import Title from '../../components/title'
 import SubmiteButton from '../../components/button/submite-button'
 import Origamis from '../../components/origamis'
-import Origami from '../../components/origami'
 
 const ShareThoughtsPage = () => {
     return (
@@ -12,7 +11,7 @@ const ShareThoughtsPage = () => {
             <Title title="Shate your thoughts..." />
             <div className={styles.container}>
                 <div>
-                    <textarea>Placeholder</textarea>
+                    <textarea defaultValue="Placeholder..."></textarea>
                 </div>
                 <div>
                     <SubmiteButton title="Post" />
